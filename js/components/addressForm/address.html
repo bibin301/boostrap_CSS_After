@@ -1,0 +1,89 @@
+left menu example
+
+<!-- http://stackoverflow.com/questions/28025321/how-to-make-comment-shape-using-css,
+http://jsfiddle.net/giobongio/82XTf/ -->
+
+<style>
+#demo {
+  background-color: #333;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+#demo:after {
+content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-top-color: #4D9C39;
+    top: 51%;
+    left: 12%;
+    margin-left: -10px;
+  margin-left: -10px;
+    -moz-transform:rotate(270deg);
+    -webkit-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    -ms-transform:rotate(270deg);
+	
+}
+
+.box{
+	position: relative;
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	border-left: 5px solid gray;
+}
+
+.box:after{
+	content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 13px solid transparent;
+    border-top-color: gray;
+    top: 39%;
+    left: 6%;
+    margin-left: -10px;
+    
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+
+}
+
+.test{
+	height: 50px;
+	width: 50px;
+	background-color: green;
+	position: relative;
+}
+
+.test:after{
+	position: absolute;
+	content:"";
+	border: 13px solid transparent;
+    border-top-color: gray;	
+}
+</style>
+
+
+<div id="demo"></div>
+<br>
+<br>
+<br>
+
+<div class="box bor"> </div>
+<br>
+<br>
+<br>
+
+<div class="test"> </div>
+
+
+
+
+
+
